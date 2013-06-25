@@ -44,11 +44,11 @@ class User {
     private $phone;
 
     /**
-     * @var string $phonemovil
+     * @var string $phoneMobile
      *
-     * @Column(name="phonemovil", type="string", length=15, nullable=true)
+     * @Column(name="phonemobile", type="string", length=15, nullable=true)
      */
-    private $phoneMovil;
+    private $phoneMobile;
 
     /**
      * @var string $email
@@ -288,26 +288,26 @@ class User {
     }
 
     /**
-     * Set phoneMovil
+     * Set phoneMobile
      *
-     * @param string $phoneMovil
+     * @param string $phoneMobile
      * @return User
      */
-    public function setPhoneMovil($phoneMovil)
+    public function setPhoneMobile($phoneMobile)
     {
-        $this->phoneMovil = $phoneMovil;
+        $this->phoneMobile = $phoneMobile;
     
         return $this;
     }
 
     /**
-     * Get phoneMovil
+     * Get phoneMobile
      *
      * @return string 
      */
-    public function getPhoneMovil()
+    public function getPhoneMobile()
     {
-        return $this->phoneMovil;
+        return $this->phoneMobile;
     }
 
     /**
