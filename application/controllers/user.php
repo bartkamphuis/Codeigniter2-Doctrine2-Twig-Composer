@@ -45,7 +45,7 @@ class User extends CI_Controller {
                 'label' => 'phone'
             ),
             array(
-                'field' => 'phoneMovil',
+                'field' => 'phoneMobile',
                 'label' => 'phone_movil'
             ),
             array(
@@ -131,8 +131,8 @@ class User extends CI_Controller {
                 'label' => 'phone'
             ),
             array(
-                'field' => 'phoneMovil',
-                'label' => 'phone_movil'
+                'field' => 'phoneMobile',
+                'label' => 'phone_mobile'
             ),
             array(
                 'field' => 'email',
