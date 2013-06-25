@@ -21,14 +21,12 @@ class Guest extends CI_Controller {
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
     public function index() {
-        $this->output->enable_profiler(TRUE);
         echo $this->twig->render('Guest/index.html.twig', array(
         ));
     }
     
     public function login() {
         $em = $this->doctrine->em;
-        $this->output->enable_profiler(TRUE);
         echo $this->twig->render('Guest/login.html.twig', array(
         ));
     }

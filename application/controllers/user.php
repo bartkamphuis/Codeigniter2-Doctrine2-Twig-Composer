@@ -88,7 +88,6 @@ class User extends CI_Controller {
             $em->flush();
             redirect('user/show/' . $user->getId());
         }
-        $this->output->enable_profiler(TRUE);
         echo $this->twig->render('User/add_new.html.twig', array(
         ));
     }
@@ -99,7 +98,6 @@ class User extends CI_Controller {
         if (!$user) {
             throw new Exception("Not user found");
         }
-        $this->output->enable_profiler(TRUE);
         echo $this->twig->render('User/show.html.twig', array(
             'user' => $user
         ));
@@ -175,7 +173,6 @@ class User extends CI_Controller {
             $em->flush();
             redirect('user/edit/' . $user->getId());
         }
-        $this->output->enable_profiler(TRUE);
         echo $this->twig->render('User/edit.html.twig', array(
             'user' => $user
         ));
@@ -184,7 +181,6 @@ class User extends CI_Controller {
     public function lists() {
         $em = $this->doctrine->em;
         $users = $em->getRepository("models\Entity\User")->findAll();
-        $this->output->enable_profiler(TRUE);
         echo $this->twig->render('User/lists.html.twig', array(
             'users' => $users
         ));

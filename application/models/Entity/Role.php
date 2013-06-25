@@ -36,7 +36,7 @@ class Role {
     /**
      * @var integer $users
      *
-     * @ManyToMany(targetEntity="models\Entity\User", mappedBy="rolesaccess")
+     * @ManyToMany(targetEntity="models\Entity\User", mappedBy="rolesAccess")
      */
     private $users;
     
